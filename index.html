@@ -936,7 +936,7 @@ function transposeSingle(chord, step) {
 
     function gerarPDFFinal() 
     // força modo claro só no container do PDF
-printView.classList.add("light-mode");{
+{
         const telaRepertorio = document.getElementById("repertorioScreen").style.display !== "none";
         const palcoCifra = telaRepertorio ? 
             document.getElementById("viewerSongPalco") : 
@@ -957,6 +957,10 @@ printView.classList.add("light-mode");{
 
         // 1. CRIA O CONTAINER DE IMPRESSÃO (O que será o PDF)
         const printView = document.createElement("div");
+  
+// 🔥 COLOCA AQUI
+printView.classList.add("light-mode");
+
         printView.style.padding = "20px";
         printView.style.color = "black";
         printView.style.backgroundColor = "white";
