@@ -934,7 +934,9 @@ function transposeSingle(chord, step) {
     return html;
 }
 
-    function gerarPDFFinal() {
+    function gerarPDFFinal() 
+    // força modo claro só no container do PDF
+printView.classList.add("light-mode");{
         const telaRepertorio = document.getElementById("repertorioScreen").style.display !== "none";
         const palcoCifra = telaRepertorio ? 
             document.getElementById("viewerSongPalco") : 
