@@ -8,22 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <title>Minha Trilha - Cifras Pessoais</title>
   <style>
-    /* --- DEFINIÇÃO DE VARIÁVEIS CSS (MODO ESCURO - PADRÃO) --- */
-    :root {
-      --bg-main: #000000;       /* Azul Marinho Muito Escuro */
-      --bg-sidebar: #0f172a;    /* Azul Ligeiramente mais claro para contraste */
-      --bg-card: #1e293b;       /* Fundo dos inputs e cards */
-      --text-main: #f1f5f9;     /* Branco Suave */
-      --text-muted: #94a3b8;    /* Cinza Azulado */
-      --color-gold: #fbbf24;    /* Dourado/Amarelo do Brilho */
-      --color-gold-hover: #f59e0b; /* Dourado mais escuro para hover */
-      --color-accent: #e11d48;  /* Carmesim Sutil para detalhes */
-      --border-color: #334155;  /* Cor das bordas */
-      
-      /* Cor específica do palco da cifra (sempre preto profundo) */
-      --bg-song: #020617;
-      --text-song: #f9fafb;
-    }
+   /* --- DEFINIÇÃO DE VARIÁVEIS CSS (PRETO + CINZA NEUTRO) --- */
+:root {
+  --bg-main: #0a0a0a;        /* Preto principal (não 100% puro pra não cansar) */
+  --bg-sidebar: #111111;     /* Cinza bem escuro */
+  --bg-card: #1a1a1a;        /* Cards levemente destacados */
+
+  --text-main: #e5e5e5;      /* Branco suave */
+  --text-muted: #9ca3af;     /* Cinza neutro */
+
+  --color-gold: #facc15;     
+  --color-gold-hover: #eab308;
+
+  --color-accent: #ef4444;   /* Vermelho mais limpo (menos rosado que antes) */
+
+  --border-color: #2a2a2a;   /* Borda sutil */
+
+  /* Palco da cifra */
+  --bg-song: #000000;        /* Preto mais profundo */
+  --text-song: #f5f5f5;
+}
 
     /* --- VARIÁVEIS PARA O MODO CLARO --- */
     body.light-mode {
